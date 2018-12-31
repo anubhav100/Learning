@@ -13,6 +13,6 @@ class UserService{
         String data = "2018-04-19";
         // get the threadlocal vallue for the thread which call the function
         SimpleDateFormat date = (SimpleDateFormat) ThreadSafeFormatter.dateFormatter.get();
-        date.format(data);
+       return date.format(data);
     }
 }
