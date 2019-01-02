@@ -14,7 +14,7 @@ object Main extends App {
 
       val today = Calendar.getInstance().getTime()
       println("Future: " + x + " - sleep was: " + sleepTime + " - " + today)
-      1;
+
     }
   }
 
