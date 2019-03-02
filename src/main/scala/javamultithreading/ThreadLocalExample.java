@@ -11,7 +11,7 @@ class ThreadSafeFormatter{
 class UserService{
     public String dateOfBirth(int userId){
         String data = "2018-04-19";
-        // get the threadlocal vallue for the thread which call the function
+        // get the threadlocal value for the thread which call the function
         SimpleDateFormat date = (SimpleDateFormat) ThreadSafeFormatter.dateFormatter.get();
        return date.format(data);
     }
